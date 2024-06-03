@@ -17,12 +17,25 @@
   "license": "ISC",
   "type": "module",
   "main": "dist/index.js",
+  "files": [
+    "dist",
+    "CHANGELOG.md",
+    "LICENSE.txt",
+    "README.md"
+  ],
   "scripts": {
     "build": "vite build",
     "changeset": "changeset add",
     "prepare": "husky",
     "release": "npm run build && changeset publish",
     "test": "vitest run"
+  },
+  "lint-staged": {
+    "*.{js,cjs,mjs,ts}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "package.json": "prettier --write"
   },
   "prettier": "@zazen/prettier-config",
   "dependencies": {
