@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    // Type Checking
+    "strictNullChecks": true,
+
+    // Modules
+    "declaration": true,
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "resolveJsonModule": true,
+
+    // Emit
+    "declarationDir": "dist/types",
+    "outDir": "dist",
+
+    // JavaScript Support
+    "allowJs": true,
+    "checkJs": true,
+
+    // Interop Constraints
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+
+    // Language and Environment
+    "jsx": "react-jsx",
+    "lib": ["esnext"],
+    "target": "esnext",
+    "useDefineForClassFields": true,
+
+    // Projects
+    "incremental": true,
+
+    // Completeness
+    "skipLibCheck": true
+  },
+  "exclude": ["node_modules", "dist"],
+  "include": [
+    "src",
+    "__tests__",
+    ".eslintrc.cjs",
+    "global.d.ts",
+    "vite.config.js"
+  ]
+}

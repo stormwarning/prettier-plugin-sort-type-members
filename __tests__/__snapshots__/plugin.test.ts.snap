@@ -1,0 +1,472 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`format, {"sortMembersAlphabetically":false} > function-member.ts 1`] = `
+"type Link = {
+  foo: () => void;
+  text: string;
+  onClick: () => void;
+};
+
+type Literal = {
+  method(): void;
+  func: () => void;
+  value: number;
+};
+
+interface Interface {
+  method(): void;
+  func: () => void;
+  value: number;
+}
+"
+`;
+
+exports[`format, {"sortMembersAlphabetically":false} > interface.ts 1`] = `
+"interface A {
+  b: string;
+  c: unknown;
+  a: string;
+}
+
+interface B {
+  x: string;
+  a(): string;
+  z(): string;
+  b(): never;
+  c: number;
+}
+
+interface C {
+  z: 0;
+  a: string;
+
+  b: string;
+  aa: 0;
+  m(): unknown;
+
+  c: string;
+}
+
+interface D {
+  a: string;
+  b: string;
+
+  c: 0;
+
+  am(): 0;
+  bm(): 0;
+}
+
+interface E {
+  // comment-on-a
+  a: 0;
+
+  // comment-on-c
+  c: 0; // tail-comment-c
+
+  // comment-on-d
+  d(): 0; // tail-comment-d
+  b: 0; // tail-comment-b
+
+  e(): 0;
+  // trailing-comment
+}
+
+interface F {
+  a(): 0;
+  b: 0;
+  [c: number]: 0;
+  new (): F;
+  new (a: 0, b: 0): F;
+  [d: symbol]: 0;
+  [\`e\`]: 0;
+  [\`f\`]: 0;
+  new (a: 0): F;
+  [\`g\`](): 0;
+  set h(_: 0);
+  get i(): 0;
+  j: () => 0;
+}
+
+interface G {
+  a: 0;
+  [c: number]: () => 0;
+  [d: symbol]: 0;
+}
+"
+`;
+
+exports[`format, {"sortMembersAlphabetically":false} > literal-keys.ts 1`] = `
+"type Endpoint<T> = T | unknown;
+type UserResponse = unknown;
+type RepairOrdersResponse = unknown;
+
+export type DataEndpoints = {
+  user: Endpoint<UserResponse>;
+  "repair-orders": Endpoint<RepairOrdersResponse>;
+};
+
+type X = {
+  data: unknown;
+  "background-color": unknown;
+  ["color"]: unknown;
+  alpha: unknown;
+};
+
+const alpha = Symbol();
+type Y = {
+  date: Date;
+  best: unknown;
+  ["circle"]: unknown;
+  [alpha]: unknown;
+  alpha: unknown;
+};
+
+type Z = {
+  edge: () => void;
+  dog: unknown;
+  "change-value": () => void;
+  "big-value": number;
+  "another-one": 0;
+};
+
+interface A {
+  [alpha]: unknown;
+  one: unknown;
+  ["two"]: unknown;
+  ["three"](): void;
+  four: unknown;
+  five(): void;
+}
+"
+`;
+
+exports[`format, {"sortMembersAlphabetically":false} > type-alias.ts 1`] = `
+"type AType = {
+  z(): number;
+  y: number;
+  x: () => () => number;
+  new (a: 0, b: 1): A;
+  get w(): number;
+  v?(): number;
+  [u: number]: () => number;
+  [t: string]: unknown;
+  [\`s\`]: number;
+  r?: number;
+};
+"
+`;
+
+exports[`format, {"sortMembersAlphabetically":true} > function-member.ts 1`] = `
+"type Link = {
+  foo: () => void;
+  text: string;
+  onClick: () => void;
+};
+
+type Literal = {
+  method(): void;
+  func: () => void;
+  value: number;
+};
+
+interface Interface {
+  method(): void;
+  func: () => void;
+  value: number;
+}
+"
+`;
+
+exports[`format, {"sortMembersAlphabetically":true} > interface.ts 1`] = `
+"interface A {
+  b: string;
+  c: unknown;
+  a: string;
+}
+
+interface B {
+  x: string;
+  a(): string;
+  z(): string;
+  b(): never;
+  c: number;
+}
+
+interface C {
+  z: 0;
+  a: string;
+
+  b: string;
+  aa: 0;
+  m(): unknown;
+
+  c: string;
+}
+
+interface D {
+  a: string;
+  b: string;
+
+  c: 0;
+
+  am(): 0;
+  bm(): 0;
+}
+
+interface E {
+  // comment-on-a
+  a: 0;
+
+  // comment-on-c
+  c: 0; // tail-comment-c
+
+  // comment-on-d
+  d(): 0; // tail-comment-d
+  b: 0; // tail-comment-b
+
+  e(): 0;
+  // trailing-comment
+}
+
+interface F {
+  a(): 0;
+  b: 0;
+  [c: number]: 0;
+  new (): F;
+  new (a: 0, b: 0): F;
+  [d: symbol]: 0;
+  [\`e\`]: 0;
+  [\`f\`]: 0;
+  new (a: 0): F;
+  [\`g\`](): 0;
+  set h(_: 0);
+  get i(): 0;
+  j: () => 0;
+}
+
+interface G {
+  a: 0;
+  [c: number]: () => 0;
+  [d: symbol]: 0;
+}
+"
+`;
+
+exports[`format, {"sortMembersAlphabetically":true} > literal-keys.ts 1`] = `
+"type Endpoint<T> = T | unknown;
+type UserResponse = unknown;
+type RepairOrdersResponse = unknown;
+
+export type DataEndpoints = {
+  user: Endpoint<UserResponse>;
+  "repair-orders": Endpoint<RepairOrdersResponse>;
+};
+
+type X = {
+  data: unknown;
+  "background-color": unknown;
+  ["color"]: unknown;
+  alpha: unknown;
+};
+
+const alpha = Symbol();
+type Y = {
+  date: Date;
+  best: unknown;
+  ["circle"]: unknown;
+  [alpha]: unknown;
+  alpha: unknown;
+};
+
+type Z = {
+  edge: () => void;
+  dog: unknown;
+  "change-value": () => void;
+  "big-value": number;
+  "another-one": 0;
+};
+
+interface A {
+  [alpha]: unknown;
+  one: unknown;
+  ["two"]: unknown;
+  ["three"](): void;
+  four: unknown;
+  five(): void;
+}
+"
+`;
+
+exports[`format, {"sortMembersAlphabetically":true} > type-alias.ts 1`] = `
+"type AType = {
+  z(): number;
+  y: number;
+  x: () => () => number;
+  new (a: 0, b: 1): A;
+  get w(): number;
+  v?(): number;
+  [u: number]: () => number;
+  [t: string]: unknown;
+  [\`s\`]: number;
+  r?: number;
+};
+"
+`;
+
+exports[`format, {} > function-member.ts 1`] = `
+"type Link = {
+  foo: () => void;
+  text: string;
+  onClick: () => void;
+};
+
+type Literal = {
+  method(): void;
+  func: () => void;
+  value: number;
+};
+
+interface Interface {
+  method(): void;
+  func: () => void;
+  value: number;
+}
+"
+`;
+
+exports[`format, {} > interface.ts 1`] = `
+"interface A {
+  b: string;
+  c: unknown;
+  a: string;
+}
+
+interface B {
+  x: string;
+  a(): string;
+  z(): string;
+  b(): never;
+  c: number;
+}
+
+interface C {
+  z: 0;
+  a: string;
+
+  b: string;
+  aa: 0;
+  m(): unknown;
+
+  c: string;
+}
+
+interface D {
+  a: string;
+  b: string;
+
+  c: 0;
+
+  am(): 0;
+  bm(): 0;
+}
+
+interface E {
+  // comment-on-a
+  a: 0;
+
+  // comment-on-c
+  c: 0; // tail-comment-c
+
+  // comment-on-d
+  d(): 0; // tail-comment-d
+  b: 0; // tail-comment-b
+
+  e(): 0;
+  // trailing-comment
+}
+
+interface F {
+  a(): 0;
+  b: 0;
+  [c: number]: 0;
+  new (): F;
+  new (a: 0, b: 0): F;
+  [d: symbol]: 0;
+  [\`e\`]: 0;
+  [\`f\`]: 0;
+  new (a: 0): F;
+  [\`g\`](): 0;
+  set h(_: 0);
+  get i(): 0;
+  j: () => 0;
+}
+
+interface G {
+  a: 0;
+  [c: number]: () => 0;
+  [d: symbol]: 0;
+}
+"
+`;
+
+exports[`format, {} > literal-keys.ts 1`] = `
+"type Endpoint<T> = T | unknown;
+type UserResponse = unknown;
+type RepairOrdersResponse = unknown;
+
+export type DataEndpoints = {
+  user: Endpoint<UserResponse>;
+  "repair-orders": Endpoint<RepairOrdersResponse>;
+};
+
+type X = {
+  data: unknown;
+  "background-color": unknown;
+  ["color"]: unknown;
+  alpha: unknown;
+};
+
+const alpha = Symbol();
+type Y = {
+  date: Date;
+  best: unknown;
+  ["circle"]: unknown;
+  [alpha]: unknown;
+  alpha: unknown;
+};
+
+type Z = {
+  edge: () => void;
+  dog: unknown;
+  "change-value": () => void;
+  "big-value": number;
+  "another-one": 0;
+};
+
+interface A {
+  [alpha]: unknown;
+  one: unknown;
+  ["two"]: unknown;
+  ["three"](): void;
+  four: unknown;
+  five(): void;
+}
+"
+`;
+
+exports[`format, {} > type-alias.ts 1`] = `
+"type AType = {
+  z(): number;
+  y: number;
+  x: () => () => number;
+  new (a: 0, b: 1): A;
+  get w(): number;
+  v?(): number;
+  [u: number]: () => number;
+  [t: string]: unknown;
+  [\`s\`]: number;
+  r?: number;
+};
+"
+`;
