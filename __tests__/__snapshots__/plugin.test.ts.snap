@@ -146,7 +146,7 @@ exports[`format, {"sortMembersAlphabetically":false} > type-alias.ts 1`] = `
   z(): number;
   y: number;
   x: () => () => number;
-  new (a: 0, b: 1): A;
+  new (a: 0, b: 1): AType;
   get w(): number;
   v?(): number;
   [u: number]: () => number;
@@ -303,7 +303,7 @@ exports[`format, {"sortMembersAlphabetically":true} > type-alias.ts 1`] = `
   z(): number;
   y: number;
   x: () => () => number;
-  new (a: 0, b: 1): A;
+  new (a: 0, b: 1): AType;
   get w(): number;
   v?(): number;
   [u: number]: () => number;
@@ -460,7 +460,7 @@ exports[`format, {} > type-alias.ts 1`] = `
   z(): number;
   y: number;
   x: () => () => number;
-  new (a: 0, b: 1): A;
+  new (a: 0, b: 1): AType;
   get w(): number;
   v?(): number;
   [u: number]: () => number;
